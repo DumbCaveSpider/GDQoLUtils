@@ -24,9 +24,7 @@ class $modify(GYILeveCell, LevelCell) {
         if (level->m_levelLength >= 0 && level->m_levelLength <= 4) {
             customBackgroundLayer->initWithColor(Mod::get()->getSettingValue<ccColor4B>("classicBackgroundColorStart"), Mod::get()->getSettingValue<ccColor4B>("classicBackgroundColorEnd"), ccp(directionX, directionY));
             customBackgroundLayer->changeWidthAndHeight(this->m_width, this->m_height);
-            if (lengthLabel) {
-                lengthLabel->setColor(Mod::get()->getSettingValue<ccColor3B>("classicTextColor"));
-            }
+            if (lengthLabel) lengthLabel->setColor(Mod::get()->getSettingValue<ccColor3B>("classicTextColor"));
             customBackgroundLayer->setVisible(true);
         }
 
@@ -34,9 +32,7 @@ class $modify(GYILeveCell, LevelCell) {
         if (level->m_levelLength == 5) {
             customBackgroundLayer->initWithColor(Mod::get()->getSettingValue<ccColor4B>("platformerBackgroundColorStart"), Mod::get()->getSettingValue<ccColor4B>("platformerBackgroundColorEnd"), ccp(directionX, directionY));
             customBackgroundLayer->changeWidthAndHeight(this->m_width, this->m_height);
-            if (lengthLabel) {
-                lengthLabel->setColor(Mod::get()->getSettingValue<ccColor3B>("platformerTextColor"));
-            }
+            if (lengthLabel) lengthLabel->setColor(Mod::get()->getSettingValue<ccColor3B>("platformerTextColor"));
             customBackgroundLayer->setVisible(true);
         }
     }

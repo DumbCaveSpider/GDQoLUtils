@@ -6,7 +6,7 @@ using namespace geode::prelude;
 class $modify(PlatEndLevelLayer, EndLevelLayer) {
     void customSetup() {
         EndLevelLayer::customSetup();
-
+        if (!Mod::get()->getSettingValue<bool>("enableSAJP")) return;
         if (!m_playLayer->m_isPlatformer) return;
         // get attempts and jumps for platformer
         int attempts = m_playLayer->m_attempts;
@@ -19,7 +19,7 @@ class $modify(PlatEndLevelLayer, EndLevelLayer) {
             auto jumpsLabel = CCLabelBMFont::create(
                 ("Jumps: " + numToString(jumps)).c_str(), "goldFont.fnt");
             summaryContainer->addChild(jumpsLabel);
-            
+
             auto attemptsLabel = CCLabelBMFont::create(
                 ("Attempts: " + numToString(attempts)).c_str(), "goldFont.fnt");
             summaryContainer->addChild(attemptsLabel);

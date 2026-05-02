@@ -7,7 +7,7 @@
 		"ios": "2.2081"
 	},
 	"id": "arcticwoof.arcticwoof_qol_utils",
-	"name": "ArcticWoof QoL Utils",
+	"name": "ArcticWoof's QoL Utils",
 	"version": "v1.0.0",
 	"developer": "ArcticWoof",
 	"description": "Small List of QoL Features suggested to me.",
@@ -83,6 +83,26 @@
 				"slider": false,
 				"input": false
 			}
+		},
+		"titleAttemptsJumpPlat":{
+			"type": "title",
+			"name": "Show Attempts and Jumps on Platformer",
+			"description": "Customize the Attempts and Jumps label on platformer levels"
+		},
+		"enableSAJP":{
+			"type": "bool",
+			"name": "Show Attempts and Jumps on Platformer",
+			"default": true
+		},
+		"titleRemoveMoveToTop":{
+			"type": "title",
+			"name": "Remove Move to Top Button",
+			"description": "Customize the Remove Move to Top Button feature"
+		},
+		"enableRemoveMoveToTop":{
+			"type": "bool",
+			"name": "Remove Move to Top Button",
+			"default": false
 		}
 	}
 }
