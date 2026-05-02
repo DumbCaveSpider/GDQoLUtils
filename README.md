@@ -19,12 +19,6 @@
 - Shows the <cg>attempts</c> and <cy>jumps</c> when you completed a <cb>Platformer</c> level. 
 - *<cy>For some reason this doesn't exist on Vanilla GD.</c>*
 
-## Remove that Useless Move to Top Button
-### Suggested by ([KetazonerLop](user:25479036))
-
-- Removes the <cg>Move to Top</c> button on the edit level layer. 
-- <cy>*Disabled by default since it's pretty unnecessary to remove it.*</c>
-
 ---
 
 ## Other QoL Features
