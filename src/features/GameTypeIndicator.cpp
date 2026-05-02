@@ -9,7 +9,7 @@ class $modify(GYILeveCell, LevelCell) {
         // log::debug("level cell {}", level->m_levelID);
         // log::debug("length {}", level->m_levelLength);
 
-        if (!m_backgroundLayer) return; // nullptr check
+        if (!m_backgroundLayer) return;
 
         CCLayerGradient* customBackgroundLayer = CCLayerGradient::create({0, 0, 0, 255}, {0, 0, 0, 0}, ccp(1, 0));
         customBackgroundLayer->setPosition(m_backgroundLayer->getPosition());

@@ -83,6 +83,16 @@
 				"slider": false,
 				"input": false
 			}
+		},
+		"titleClickableLevelName":{
+			"type": "title",
+			"name": "Clickable Level Name",
+			"description": "Customize the Clickable Level Name Features"
+		},
+		"enableClickableLevelName":{
+			"type": "bool",
+			"name": "Enable Clickable Level Name",
+			"default": true
 		}
 	}
 }

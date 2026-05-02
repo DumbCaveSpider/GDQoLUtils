@@ -11,8 +11,13 @@
 <cy>![⚙️](frame:geode.loader/settings.png?scale=0.45) You can change each of the features in the mod settings!</cy>
 
 ## Game Type Indicator
-### Suggested by ([ArcticWoof](user:7689052))
-- A <cl>lightweight mod</c> that adds a background gradient color to the level cell to indicate whether the level is a <cy>Classic</c> or <cb>Platformer</c>.
+#### Suggested by ([ArcticWoof](user:7689052))
+- Adds a background gradient color to the level cell to indicate whether the level is a <cy>Classic</c> or <cb>Platformer</c>.
+
+## Clickable Level Name to Browser
+#### Suggested by ([ArcticWoof](user:7689052))
+
+- Makes the level name on the level info layer <cg>clickable</c>, which opens the level page of the level to [GDBrowser](https://gdbrowser.com/).
 
 ---
 
