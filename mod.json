@@ -1,0 +1,88 @@
+{
+	"geode": "5.6.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "arcticwoof.arcticwoof_qol_utils",
+	"name": "ArcticWoof QoL Utils",
+	"version": "v1.0.0",
+	"developer": "ArcticWoof",
+	"description": "Small List of QoL Features suggested to me.",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	},
+	"tags": [
+		"enhancement",
+		"bugfix",
+		"offline"
+	],
+	"links": {
+		"source": "https://github.com/DumbCaveSpider/GDQoLUtils",
+		"community": "https://discord.gg/gXcppxTNxC",
+		"homepage": "https://arcticwoof.xyz"
+	},
+	"settings": {
+		"titleGameTypeIndicator":{
+			"type": "title",
+			"name": "Game Type Indicator",
+			"description": "Customize the Game Type Indicator Features"
+		},
+		"classicBackgroundColorStart":{
+			"type":"rgba",
+			"name": "Classic Background Color (Start)",
+			"default": [243, 183, 0, 255]
+		},
+		"classicBackgroundColorEnd":{
+			"type":"rgba",
+			"name": "Classic Background Color (End)",
+			"default": [255, 230, 120, 0]
+		},
+		"classicTextColor":{
+			"type":"rgb",
+			"name": "Classic Text Color",
+			"default": [255, 230, 120]
+		},
+		"platformerBackgroundColorStart":{
+			"type":"rgba",
+			"name": "Platformer Background Color (Start)",
+			"default": [70, 90, 230, 255]
+		},
+		"platformerBackgroundColorEnd":{
+			"type":"rgba",
+			"name": "Platformer Background Color (End)",
+			"default": [120, 230, 255, 0]
+		},
+		"platformerTextColor":{
+			"type":"rgb",
+			"name": "Platformer Text Color",
+			"default": [120, 230, 255]
+		},
+		"directionX":{
+			"type":"int",
+			"name": "Gradient Direction X",
+			"description": "Gradient between start and end in the direction of X <cy>(1 = right, -1 = left)</c>",
+			"default": 1,
+			"min": -1,
+			"max": 1,
+			"control": {
+				"slider": false,
+				"input": false
+			}
+		},
+		"directionY":{
+			"type":"int",
+			"name": "Gradient Direction Y",
+			"description": "Gradient between start and end in the direction of Y <cy>(1 = up, -1 = down)</c>",
+			"default": 0,
+			"min": -1,
+			"max": 1,
+			"control": {
+				"slider": false,
+				"input": false
+			}
+		}
+	}
+}
