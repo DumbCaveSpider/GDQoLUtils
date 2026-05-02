@@ -18,9 +18,9 @@ class $modify(SFSLevelInfoLayer, LevelInfoLayer) {
             CCPoint originalPos = likesLabel->getPosition();
             likesLabel->setPositionY(likesLabel->getPositionY() + 6);  // move the original likes label up a bit to make room for the ratio
             CCLabelBMFont* ratioLabel = CCLabelBMFont::create("", "bigFont.fnt");
-            ratioLabel->setString(fmt::format("{}", GameToolbox::pointsToString(level->m_featured)).c_str());
+            ratioLabel->setString(fmt::format("Score: {}", GameToolbox::pointsToString(level->m_featured)).c_str());
             ratioLabel->setColor({253, 255, 120});
-            ratioLabel->setScale(0.35f);
+            ratioLabel->limitLabelWidth(180.f, 0.35f, 0.2f);
             ratioLabel->setAnchorPoint(likesLabel->getAnchorPoint());
             ratioLabel->setPosition(originalPos - CCPoint(0, 8));
             this->addChild(ratioLabel);
