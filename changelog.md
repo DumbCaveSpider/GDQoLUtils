@@ -1,6 +1,6 @@
 ## v1.0.2
 
-- Added a new feature **Feature Score on Level Info** that shows the like to dislike ratio of a level on the level info layer
+- Added a new feature **Feature Score on Level Info** that shows the feature score of a level on the level info layer
 
 ## v1.0.1
 
