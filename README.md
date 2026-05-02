@@ -14,11 +14,6 @@
 ### Suggested by ([ArcticWoof](user:7689052))
 - A <cl>lightweight mod</c> that adds a background gradient color to the level cell to indicate whether the level is a <cy>Classic</c> or <cb>Platformer</c>.
 
-## Show Attempts and Jumps on Platformer
-### Suggested by ([Dragonix23](user:21168469))
-- Shows the <cg>attempts</c> and <cy>jumps</c> when you completed a <cb>Platformer</c> level. 
-- *<cy>For some reason this doesn't exist on Vanilla GD.</c>*
-
 ---
 
 ## Other QoL Features
