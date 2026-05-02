@@ -8,7 +8,7 @@
 	},
 	"id": "arcticwoof.arcticwoof_qol_utils",
 	"name": "ArcticWoof's QoL Utils",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "ArcticWoof",
 	"description": "Small List of QoL Features suggested to me.",
 	"dependencies": {
@@ -92,6 +92,16 @@
 		"enableClickableLevelName":{
 			"type": "bool",
 			"name": "Enable Clickable Level Name",
+			"default": true
+		},
+		"titleShowFeatureScore":{
+			"type": "title",
+			"name": "Feature Score on Level Info",
+			"description": "Customize the Feature Score on Level Info Features"
+		},
+		"enableShowFeatureScore":{
+			"type": "bool",
+			"name": "Enable Feature Score on Level Info",
 			"default": true
 		}
 	}
