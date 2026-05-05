@@ -29,6 +29,34 @@
 - Shows the <cy>feature score</c> of a rated level on the level info screen.
 - The score is shown as a number and is colored yellow.
 
+## Scalable Menu Buttons
+
+##### Suggested by ([BombFish](user:26405845))
+
+- Lets you scale the buttons on the main menu. (Play Button, Editor Button and Icon Kit Button)
+- <co>The button hitbox is not scaled, only the sprite itself.</c>
+
+## Remove that Useless Move to Top Button
+
+##### Suggested by ([KetazonerLop](user:25479036))
+
+- Removes the <cg>Move to Top</c> button on the edit level layer.
+- <cy>_Disabled by default._</c>
+
+## Rainbow Text Everywhere
+
+##### Suggested by ([Edibon](user:21336955))
+
+- Makes all text in the game cycle through the colors of the <cp>rainbow</c>.
+- <cy>_Disabled by default._</c>
+
+## Find My Online Levels
+
+##### Suggested by ([SilenceDTM](user:29642529))
+
+- Add the <co>Find Level</c> button on <cg>My Online Levels</c>.
+- <cy>_Work in progress, still unsure how it works._</c>
+
 ---
 
 ## Other QoL Features

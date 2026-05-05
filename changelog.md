@@ -1,6 +1,9 @@
 ## v1.0.2
 
-- Added a new feature **Feature Score on Level Info** that shows the feature score of a level on the level info layer
+- Added a new feature **Feature Score on Level Info**.
+- Added a new feature **Scalable Menu Buttons**.
+- Added a new feature **Remove that Useless Move to Top Button**.
+- Added a new feature **Rainbow Text Everywhere**.
 
 ## v1.0.1
 

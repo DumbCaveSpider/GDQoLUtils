@@ -103,6 +103,49 @@
 			"type": "bool",
 			"name": "Enable Feature Score on Level Info",
 			"default": true
+		},
+		"titleChangeableMenuButtons":{
+			"type": "title",
+			"name": "Customizable Menu Buttons",
+			"description": "Customize the Changeable Menu Buttons Features"
+		},
+		"scalePlayButton":{
+			"type": "float",
+			"name": "Play Button Scale",
+			"description": "Scale of the Play button",
+			"default": 1.0
+		},
+		"scaleIconKitButton":{
+			"type": "float",
+			"name": "Icon Kit Button Scale",
+			"description": "Scale of the Icon Kit button",
+			"default": 1.0
+		},
+		"scaleEditorButton":{
+			"type": "float",
+			"name": "Editor Button Scale",
+			"description": "Scale of the Editor button",
+			"default": 1.0
+		},
+		"titleRemoveMoveToTop":{
+			"type": "title",
+			"name": "Remove Move to Top Button",
+			"description": "Customize the Remove Move to Top Button feature"
+		},
+		"enableRemoveMoveToTop":{
+			"type": "bool",
+			"name": "Remove Move to Top Button",
+			"default": false
+		},
+		"titleRainbowText":{
+			"type": "title",
+			"name": "Rainbow Text Everywhere",
+			"description": "Customize the Rainbow Text Everywhere feature"
+		},
+		"enableRainbowText":{
+			"type": "bool",
+			"name": "Rainbow Text Everywhere",
+			"default": false
 		}
 	}
 }
