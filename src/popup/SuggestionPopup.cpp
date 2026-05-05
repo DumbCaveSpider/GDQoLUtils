@@ -36,7 +36,6 @@ bool SuggestionPopup::init() {
     // suggestion name input
     m_suggestionName = TextInput::create(180.f, "Provide a suggestion title", "chatFont.fnt");
     m_suggestionName->setCommonFilter(CommonFilter::Name);
-    m_suggestionName->setMaxCharCount(50);
     m_suggestionName->setTextAlign(TextInputAlign::Left);
     m_suggestionName->setLabel("Suggestion Title");
     m_mainLayer->addChildAtPosition(m_suggestionName, Anchor::Center, {-80.f, 30.f}, false);
@@ -123,10 +122,10 @@ void SuggestionPopup::onSubmit(CCObject* sender) {
 
                 matjson::Value suggestionData = matjson::Value::object();
                 suggestionData["accountId"] = GJAccountManager::get()->m_accountID;
-                suggestionData["username"] = GJAccountManager::get()->m_username;
+                suggestionData["username"] = std::string(GJAccountManager::get()->m_username.c_str());
                 suggestionData["argonToken"] = std::move(token);
-                suggestionData["suggestionName"] = m_suggestionName ? m_suggestionName->getString() : "";
-                suggestionData["suggestionDescription"] = m_suggestionDesc ? m_suggestionDesc->getString() : "";
+                suggestionData["suggestionName"] = std::string(m_suggestionName ? m_suggestionName->getString().c_str() : "");
+                suggestionData["suggestionDescription"] = std::string(m_suggestionDesc ? m_suggestionDesc->getString().c_str() : "");
 
                 auto postReq = web::WebRequest();
                 postReq.bodyJSON(suggestionData);
