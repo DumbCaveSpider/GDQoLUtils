@@ -31,10 +31,12 @@ bool SuggestionPopup::init() {
     }
 
     this->setTitle("Suggest a QoL Feature!");
+    addSideArt(m_mainLayer, SideArt::All, SideArtStyle::PopupGold, false);
 
     // suggestion name input
     m_suggestionName = TextInput::create(180.f, "Provide a suggestion title", "chatFont.fnt");
     m_suggestionName->setCommonFilter(CommonFilter::Name);
+    m_suggestionName->setMaxCharCount(50);
     m_suggestionName->setTextAlign(TextInputAlign::Left);
     m_suggestionName->setLabel("Suggestion Title");
     m_mainLayer->addChildAtPosition(m_suggestionName, Anchor::Center, {-80.f, 30.f}, false);
@@ -48,7 +50,7 @@ bool SuggestionPopup::init() {
 
     // info button
     auto infoBtnSpr = CCSprite::createWithSpriteFrameName("GJ_infoBtn_001.png");
-    infoBtnSpr->setScale(0.7f);
+    infoBtnSpr->setScale(0.8f);
     auto infoBtnBtn = geode::Button::createWithNode(infoBtnSpr, [this](geode::Button* sender) {
         MDPopup::create(
             "What to suggest?",
@@ -59,7 +61,7 @@ bool SuggestionPopup::init() {
             "OK")
             ->show();
     });
-    m_buttonMenu->addChildAtPosition(infoBtnBtn, Anchor::TopRight, {0, 0}, false);
+    m_buttonMenu->addChildAtPosition(infoBtnBtn, Anchor::TopRight, {-3, -3}, false);
 
     // about submission
     std::string placeholderText = "__Enter a description for your suggestion!__\n\n<cy>Provide as much detail as possible, the more detailed your suggestion is, the more likely it is to be implemented!</c>";
@@ -84,7 +86,7 @@ bool SuggestionPopup::init() {
     auto submitSpr = ButtonSprite::create("Submit Suggestion");
     auto submitButton = geode::Button::createWithNode(submitSpr, [this](geode::Button* sender) {
         if (m_suggestionName->getString().empty() || m_suggestionDesc->getString().empty()) {
-            Notification::create("Please enter a title and description before submitting!", NotificationIcon::Error)->show();
+            Notification::create("Provide a title and description before submitting!", NotificationIcon::Error)->show();
             return;
         }
 
