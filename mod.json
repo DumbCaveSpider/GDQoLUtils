@@ -8,7 +8,7 @@
 	},
 	"id": "arcticwoof.arcticwoof_qol_utils",
 	"name": "ArcticWoof's QoL Utils",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "ArcticWoof",
 	"description": "Small List of QoL Features suggested to me.",
 	"dependencies": {
