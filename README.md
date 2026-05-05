@@ -2,7 +2,7 @@
 
 **A small collection of <cl>lightweight</c> and **<cg>QoL features</c>** for **<cg>Geometry</c> <cy>Dash</c>**, suggested to me by the community.**
 
-<cf>![💬](frame:geode.loader/message.png?scale=0.45) If you have any **suggestions** for something to add to this mod that is easy to implement and doesn't exist anywhere on Geode, contact me via **[Discord](https://discord.gg/gXcppxTNxC)** or **[Direct Message](user:7689052)**.</cy>
+<cf>![💬](frame:geode.loader/message.png?scale=0.45) If you have any **suggestions** for something to add to this mod that is easy to implement and doesn't exist anywhere on Geode, contact me via **[Discord](https://discord.gg/gXcppxTNxC)**, **[Direct Message](user:7689052)** or use the **In-game suggestion** button in the **Main Menu**.</cy>
 
 ---
 
@@ -49,13 +49,6 @@
 
 - Makes all text in the game cycle through the colors of the <cp>rainbow</c>.
 - <cy>_Disabled by default._</c>
-
-## Find My Online Levels
-
-##### Suggested by ([SilenceDTM](user:29642529))
-
-- Add the <co>Find Level</c> button on <cg>My Online Levels</c>.
-- <cy>_Work in progress, still unsure how it works._</c>
 
 ---
 

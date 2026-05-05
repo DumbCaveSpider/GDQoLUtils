@@ -1,9 +1,10 @@
 ## v1.0.2
 
-- Added a new feature **Feature Score on Level Info**.
-- Added a new feature **Scalable Menu Buttons**.
-- Added a new feature **Remove that Useless Move to Top Button**.
-- Added a new feature **Rainbow Text Everywhere**.
+- Added in-game suggestion feature in the Main Menu
+- Added a new feature **Feature Score on Level Info**
+- Added a new feature **Scalable Menu Buttons**
+- Added a new feature **Remove that Useless Move to Top Button**
+- Added a new feature **Rainbow Text Everywhere**
 
 ## v1.0.1
 

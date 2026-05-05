@@ -24,6 +24,11 @@
 		"community": "https://discord.gg/gXcppxTNxC",
 		"homepage": "https://arcticwoof.xyz"
 	},
+	"resources": {
+	"sprites": [
+			"resources/*.png"
+		]
+	},
 	"settings": {
 		"titleGameTypeIndicator":{
 			"type": "title",
