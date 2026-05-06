@@ -2,7 +2,7 @@
 
 **A small collection of <cl>lightweight</c> and **<cg>QoL features</c>** for **<cg>Geometry</c> <cy>Dash</c>**, suggested to me by the community.**
 
-<cf>![💬](frame:geode.loader/message.png?scale=0.45) If you have any **suggestions** for something to add to this mod that is easy to implement and doesn't exist anywhere on Geode, contact me via **[Discord](https://discord.gg/gXcppxTNxC)**, **[Direct Message](user:7689052)** or use the **In-game suggestion** button in the **Main Menu**.</cy>
+<cf>![💬](frame:geode.loader/message.png?scale=0.45) If you have suggestions for something to add to this mod that is easy to implement and doesn't already exist on Geode, contact me via **[Discord](https://discord.gg/gXcppxTNxC)**, **[Direct Message](user:7689052)**, or use the **in-game suggestion** button in the **Main Menu**.</cy>
 
 ---
 
@@ -54,10 +54,9 @@
 
 ##### Suggested by ([4ntigravity](user:24916906))
 
-- Displays all of the objects in a level in the info page before you play a level.
-- Gives you an idea of how laggy it would possibly be.
+- Displays the object count in the level info before you play a level.
 - <cy>_Useful for creators and level grinders._</c>
-- <co>_The object count is not exact, Anything beyond 65535 objects won't be counted accurately._</c>
+- <co>_The object count is not exact; anything beyond 65535 objects won't be counted accurately._</c>
 
 ---
 
