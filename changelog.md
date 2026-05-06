@@ -6,7 +6,7 @@
 - **Rainbow Text Everywhere** is now more responsive and will apply all text changes immediately
 - Fixed the button size of the Suggestion Button to match with the Profile Button
 - Remove that Useless Move to Top Button now hides the button instead of removing it
-- Fixed the negative value settings for **Customizable Menu Buttons**
+- Fixed the negative value settings for **Scalable Menu Buttons**
 
 ## v1.0.3
 
