@@ -1,4 +1,4 @@
-# v1.0.4
+## v1.0.4
 
 - Added a toggle to remove the Suggestion Button in the Main Menu in the mod settings
 - Added toggle to disable the **Game Type Indicator** feature in the mod settings
