@@ -56,7 +56,8 @@ bool SuggestionPopup::init() {
             "<cf>ArcticWoof's QoL Utils</c> accepts <cg>any new suggestions and featues</c> that are <cl>lightweight to implement</c> and don't already exist on <cp>Geode</c>.\n\n"
             "If you have an idea for a <cl>QoL feature</c>, please <cg>submit</c> it using this suggestion popup!\n\n"
             "Please avoid suggesting <cr>Editor-related features</c> or <cr>gameplay changes</c>, as those are unlikely to be implemented here.\n\n"
-            "All <cg>suggestions</c> will be reviewed by <cf>ArcticWoof</c> and <co>may be added</c> to the mod in a <cc>future update</c>.",
+            "All <cg>suggestions</c> will be reviewed by <cf>ArcticWoof</c> and <co>may be added</c> to the mod in a <cc>future update</c>.\n\n"
+            "You can only <cg>suggest one feature</c> at <co>certain time</c>, this is to <cr>prevent spamming</c>.\n\n",
             "OK")
             ->show();
     });

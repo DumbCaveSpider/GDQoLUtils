@@ -8,10 +8,11 @@ using namespace geode::prelude;
 class $modify(AWQOLMenuLayer, MenuLayer) {
     bool init() {
         if (!MenuLayer::init()) return false;
+        if (!Mod::get()->getSettingValue<bool>("showSuggestionButton")) return true;
         auto profileMenu = typeinfo_cast<CCMenu*>(this->getChildByID("profile-menu"));
 
         if (profileMenu) {
-            auto suggestionSpr = CircleButtonSprite::create(CCSprite::create("wrenchIcon.png"_spr), CircleBaseColor::Blue, CircleBaseSize::Medium);
+            auto suggestionSpr = CircleButtonSprite::create(CCSprite::create("wrenchIcon.png"_spr), CircleBaseColor::Blue, CircleBaseSize::BigAlt);
             auto suggestionBtn = geode::Button::createWithNode(suggestionSpr, [this](geode::Button* sender) {
                 auto popup = SuggestionPopup::create();
                 popup->show();

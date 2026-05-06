@@ -8,7 +8,7 @@
 	},
 	"id": "arcticwoof.arcticwoof_qol_utils",
 	"name": "ArcticWoof's QoL Utils",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "ArcticWoof",
 	"description": "Small List of QoL Features suggested to me.",
 	"dependencies": {
@@ -30,40 +30,57 @@
 		]
 	},
 	"settings": {
+		"showSuggestionButton":{
+			"type": "bool",
+			"name": "Show Suggestion Button",
+			"description": "Show the Suggestion Button in the Main Menu",
+			"default": true
+		},
 		"titleGameTypeIndicator":{
 			"type": "title",
 			"name": "Game Type Indicator",
 			"description": "Customize the Game Type Indicator Features"
 		},
+		"enableGameTypeIndicator":{
+			"type": "bool",
+			"name": "Enable Game Type Indicator",
+			"default": true
+		},
 		"classicBackgroundColorStart":{
 			"type":"rgba",
 			"name": "Classic Background Color (Start)",
-			"default": [243, 183, 0, 255]
+			"default": [243, 183, 0, 255],
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"classicBackgroundColorEnd":{
 			"type":"rgba",
 			"name": "Classic Background Color (End)",
-			"default": [255, 230, 120, 0]
+			"default": [255, 230, 120, 0],
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"classicTextColor":{
 			"type":"rgb",
 			"name": "Classic Text Color",
-			"default": [255, 230, 120]
+			"default": [255, 230, 120],
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"platformerBackgroundColorStart":{
 			"type":"rgba",
 			"name": "Platformer Background Color (Start)",
-			"default": [70, 90, 230, 255]
+			"default": [70, 90, 230, 255],
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"platformerBackgroundColorEnd":{
 			"type":"rgba",
 			"name": "Platformer Background Color (End)",
-			"default": [120, 230, 255, 0]
+			"default": [120, 230, 255, 0],
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"platformerTextColor":{
 			"type":"rgb",
 			"name": "Platformer Text Color",
-			"default": [120, 230, 255]
+			"default": [120, 230, 255],
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"directionX":{
 			"type":"int",
@@ -75,7 +92,8 @@
 			"control": {
 				"slider": false,
 				"input": false
-			}
+			},
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"directionY":{
 			"type":"int",
@@ -87,7 +105,8 @@
 			"control": {
 				"slider": false,
 				"input": false
-			}
+			},
+			"enable-if": "enableGameTypeIndicator"
 		},
 		"titleClickableLevelName":{
 			"type": "title",
@@ -118,19 +137,34 @@
 			"type": "float",
 			"name": "Play Button Scale",
 			"description": "Scale of the Play button",
-			"default": 1.0
+			"default": 1.0,
+			"min": 0.1,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			}
 		},
 		"scaleIconKitButton":{
 			"type": "float",
 			"name": "Icon Kit Button Scale",
 			"description": "Scale of the Icon Kit button",
-			"default": 1.0
+			"default": 1.0,
+			"min": 0.1,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			}
 		},
 		"scaleEditorButton":{
 			"type": "float",
 			"name": "Editor Button Scale",
 			"description": "Scale of the Editor button",
-			"default": 1.0
+			"default": 1.0,
+			"min": 0.1,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			}
 		},
 		"titleRemoveMoveToTop":{
 			"type": "title",
@@ -151,6 +185,42 @@
 			"type": "bool",
 			"name": "Rainbow Text Everywhere",
 			"default": false
+		},
+		"rainbowTextSaturation":{
+			"type": "float",
+			"name": "Rainbow Text Saturation",
+			"description": "Adjust the saturation used by rainbow text.",
+			"default": 1.0,
+			"min": 0.0,
+			"max": 1.0,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			},
+			"enable-if": "enableRainbowText"
+		},
+		"rainbowTextValue":{
+			"type": "float",
+			"name": "Rainbow Text Brightness",
+			"description": "Adjust the brightness used by rainbow text.",
+			"default": 1.0,
+			"min": 0.0,
+			"max": 1.0,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			},
+			"enable-if": "enableRainbowText"
+		},
+		"titleObjectDisplayInLevelInfo":{
+			"type": "title",
+			"name": "Object Display in Level Info",
+			"description": "Customize the Object Display in Level Info feature"
+		},
+		"enableObjectDisplayInLevelInfo":{
+			"type": "bool",
+			"name": "Show Object Display in Level Info",
+			"default": true
 		}
 	}
 }

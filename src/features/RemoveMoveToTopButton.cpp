@@ -9,7 +9,7 @@ class $modify(RemoveEditLevelLayer, EditLevelLayer) {
         if (!Mod::get()->getSettingValue<bool>("enableRemoveMoveToTop")) return true;
 
         auto actionMenu = this->getChildByID("level-actions-menu");
-        if (actionMenu) actionMenu->getChildByID("move-to-top-button")->removeFromParent();
+        if (actionMenu) actionMenu->getChildByID("move-to-top-button")->setVisible(false);
 
         return true;
     }

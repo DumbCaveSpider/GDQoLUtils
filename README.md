@@ -50,6 +50,15 @@
 - Makes all text in the game cycle through the colors of the <cp>rainbow</c>.
 - <cy>_Disabled by default._</c>
 
+## Object Display in Level Info
+
+##### Suggested by ([4ntigravity](user:24916906))
+
+- Displays all of the objects in a level in the info page before you play a level.
+- Gives you an idea of how laggy it would possibly be.
+- <cy>_Useful for creators and level grinders._</c>
+- <co>_The object count is not exact, Anything beyond 65535 objects won't be counted accurately._</c>
+
 ---
 
 ## Other QoL Features

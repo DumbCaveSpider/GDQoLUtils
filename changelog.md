@@ -1,3 +1,13 @@
+# v1.0.4
+
+- Added a toggle to remove the Suggestion Button in the Main Menu in the mod settings
+- Added toggle to disable the **Game Type Indicator** feature in the mod settings
+- Added **Saturation and Brightness Values** to the **Rainbow Text Everywhere** feature (suggested by [rfthTiger](user:31305702))
+- **Rainbow Text Everywhere** is now more responsive and will apply all text changes immediately
+- Fixed the button size of the Suggestion Button to match with the Profile Button
+- Remove that Useless Move to Top Button now hides the button instead of removing it
+- Fixed the negative value settings for **Customizable Menu Buttons**
+
 ## v1.0.3
 
 - Added in-game suggestion feature in the Main Menu
