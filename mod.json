@@ -221,6 +221,73 @@
 			"type": "bool",
 			"name": "Show Object Display in Level Info",
 			"default": true
+		},
+		"titleProgressBarColor":{
+			"type": "title",
+			"name": "Custom Progress Bar Color",
+			"description": "Customize the Custom Progress Bar Color feature"
+		},
+		"enableCustomProgressBarColor":{
+			"type": "bool",
+			"name": "Enable Custom Progress Bar Color",
+			"default": false
+		},
+		"rainbowProgressBar":{
+			"type": "bool",
+			"name": "Rainbow Progress Bar",
+			"description": "Make the progress bar cycle through rainbow colors.",
+			"default": false,
+			"enable-if": "enableCustomProgressBarColor"
+		},
+		"rainbowProgressBarSaturation":{
+			"type": "float",
+			"name": "Rainbow Progress Bar Saturation",
+			"description": "Adjust the saturation used by the rainbow progress bar.",
+			"default": 1.0,
+			"min": 0.0,
+			"max": 1.0,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			},
+			"enable-if": "enableCustomProgressBarColor && rainbowProgressBar"
+		},
+		"rainbowProgressBarValue":{
+			"type": "float",
+			"name": "Rainbow Progress Bar Brightness",
+			"description": "Adjust the brightness used by the rainbow progress bar.",
+			"default": 1.0,
+			"min": 0.0,
+			"max": 1.0,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			},
+			"enable-if": "enableCustomProgressBarColor && rainbowProgressBar"
+		},
+		"rainbowIntervalProgressBar":{
+			"type": "float",
+			"name": "Rainbow Progress Bar Interval",
+			"description": "Adjust the speed at which the rainbow progress bar cycles colors. <cy>(lower is faster)</c>",
+			"default": 0.5,
+			"min": 0.1,
+			"control": {
+				"slider": false,
+				"arrow-step": 0.1
+			},
+			"enable-if": "enableCustomProgressBarColor && rainbowProgressBar"
+		},
+		"progressBarColorBorder":{
+			"type": "rgb",
+			"name": "Progress Bar Border Color",
+			"default": [255, 255, 255],
+			"enable-if": "enableCustomProgressBarColor && !rainbowProgressBar"
+		},
+		"progressBarColorFill":{
+			"type": "rgb",
+			"name": "Progress Bar Fill Color",
+			"default": [0, 255, 0],
+			"enable-if": "enableCustomProgressBarColor && !rainbowProgressBar"
 		}
 	}
 }

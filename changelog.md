@@ -1,3 +1,7 @@
+## v1.0.5
+
+- Added **Custom Progress Bar Colors** (suggested by [StackDasher](user:41028168))
+
 ## v1.0.4
 
 - Added a toggle to remove the Suggestion Button in the Main Menu in the mod settings

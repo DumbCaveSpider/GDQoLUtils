@@ -58,6 +58,14 @@
 - <cy>_Useful for creators and level grinders._</c>
 - <co>_The object count is not exact; anything beyond 65535 objects won't be counted accurately._</c>
 
+## Custom Progress Bar Colors
+
+##### Suggested by ([StackDasher](user:41028168))
+
+- Allows you to customize the colors of the progress bar in-game.
+- You can set the colors for the background, fill, and border of the progress bar or even set it as a rainbow color!
+- <cy>_Change the colors to your liking in the mod settings!_</c>
+
 ---
 
 ## Other QoL Features
