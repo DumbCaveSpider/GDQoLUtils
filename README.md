@@ -66,6 +66,18 @@
 - You can set the colors for the background, fill, and border of the progress bar or even set it as a rainbow color!
 - <cy>_Change the colors to your liking in the mod settings!_</c>
 
+## Hide Folder or Level List Button
+
+##### Suggested by ([vinyl39](user:20626664))
+
+- Hides the Set Folder Button and Level List Button in the Level Info Page.
+
+## Auto Play Level
+
+##### Suggested by ([Deteremsi](user:30493651))
+
+- Automatically plays a level on the level info screen after a delay.
+
 ---
 
 ## Other QoL Features

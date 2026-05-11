@@ -57,6 +57,8 @@ bool SuggestionPopup::init() {
             "If you have an idea for a <cl>QoL feature</c>, please <cg>submit</c> it using this suggestion popup!\n\n"
             "Please avoid suggesting <cr>Editor-related features</c> or <cr>gameplay changes</c>, as those are unlikely to be implemented here.\n\n"
             "All <cg>suggestions</c> will be reviewed by <cf>ArcticWoof</c> and <co>may be added</c> to the mod in a <cc>future update</c>.\n\n"
+            "### <cr>Please don't suggest features that is commonly found in other mods especially mod menus like noclip accuracy and other mod menu features from Mega Hack, Eclipse or QOLMod!</c>\n\n"
+            "### <co>Also this mod IS NOT RELATED TO QOLMOD, DO NOT SUGGEST FEATURES THAT ARE EXCLUSIVELY FOUND IN QOLMOD, AS I PROBABLY WON'T IMPLEMENT THEM!</c>\n\n"
             "You can only <cg>suggest one feature</c> at <co>certain time</c>, this is to <cr>prevent spamming</c>.\n\n",
             "OK")
             ->show();

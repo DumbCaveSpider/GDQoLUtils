@@ -1,6 +1,7 @@
 ## v1.0.5
 
 - Added **Custom Progress Bar Colors** (suggested by [StackDasher](user:41028168))
+- Added **Auto Play Level** (suggested by [Deteremsi](user:30493651))
 
 ## v1.0.4
 

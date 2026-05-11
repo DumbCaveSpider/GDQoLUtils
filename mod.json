@@ -8,7 +8,7 @@
 	},
 	"id": "arcticwoof.arcticwoof_qol_utils",
 	"name": "ArcticWoof's QoL Utils",
-	"version": "v1.0.4",
+	"version": "v1.0.5",
 	"developer": "ArcticWoof",
 	"description": "Small List of QoL Features suggested to me.",
 	"dependencies": {
@@ -288,6 +288,43 @@
 			"name": "Progress Bar Fill Color",
 			"default": [0, 255, 0],
 			"enable-if": "enableCustomProgressBarColor && !rainbowProgressBar"
+		},
+		"titleHideFolderListLevelInfo":{
+			"type": "title",
+			"name": "Hide Folder List in Level Info",
+			"description": "Customize the Hide Folder List in Level Info feature"
+		},
+		"hideFolderLevelInfo":{
+			"type": "bool",
+			"name": "Hide Folder Button in Level Info",
+			"default": false
+		},
+		"hideListLevelInfo":{
+			"type": "bool",
+			"name": "Hide List Button in Level Info",
+			"default": false
+		},
+		"titleAutoPlay": {
+			"type": "title",
+			"name": "Auto Play",
+			"description": "Customize the Auto Play feature"
+		},
+		"enableAutoPlay": {
+			"type": "bool",
+			"name": "Enable Auto Play",
+			"default": false
+		},
+		"autoPlayDelay": {
+			"type": "int",
+			"name": "Auto Play Delay",
+			"description": "Delay in seconds before auto play starts.",
+			"default": 5,
+			"min": 0,
+			"control": {
+				"slider": false,
+				"arrow-step": 1
+			},
+			"enable-if": "enableAutoPlay"
 		}
 	}
 }
