@@ -4,6 +4,8 @@
 
 <cf>![💬](frame:geode.loader/message.png?scale=0.45) If you have suggestions for something to add to this mod that is easy to implement and doesn't already exist on Geode, contact me via **[Discord](https://discord.gg/gXcppxTNxC)**, **[Direct Message](user:7689052)**, or use the **in-game suggestion** button in the **Main Menu**.</cy>
 
+##### <co>_Please don't suggest features that are already implemented_</c>
+
 ---
 
 ### Features

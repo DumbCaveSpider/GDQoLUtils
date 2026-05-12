@@ -5,7 +5,7 @@
 
 using namespace geode::prelude;
 
-class $modify(HideFolderListLevelInfo, LevelInfoLayer) {
+class $modify(AutoPlayLevelInfo, LevelInfoLayer) {
 public:
     struct Fields {
         int m_autoplayRemaining = -1;
@@ -15,14 +15,14 @@ public:
         auto counterTimer = typeinfo_cast<CCLabelBMFont*>(this->getChildByID("autoplay-timer"));
         if (!counterTimer) {
             m_fields->m_autoplayRemaining = -1;
-            this->unschedule(schedule_selector(HideFolderListLevelInfo::autoplayTimerTick));
+            this->unschedule(schedule_selector(AutoPlayLevelInfo::autoplayTimerTick));
             return;
         }
 
         if (m_fields->m_autoplayRemaining <= 0) {
             LevelInfoLayer::onPlay(nullptr);
             m_fields->m_autoplayRemaining = -1;
-            this->unschedule(schedule_selector(HideFolderListLevelInfo::autoplayTimerTick));
+            this->unschedule(schedule_selector(AutoPlayLevelInfo::autoplayTimerTick));
             return;
         }
 
@@ -32,7 +32,7 @@ public:
         if (m_fields->m_autoplayRemaining <= 0) {
             LevelInfoLayer::onPlay(nullptr);
             m_fields->m_autoplayRemaining = -1;
-            this->unschedule(schedule_selector(HideFolderListLevelInfo::autoplayTimerTick));
+            this->unschedule(schedule_selector(AutoPlayLevelInfo::autoplayTimerTick));
         }
     }
 
@@ -52,7 +52,7 @@ public:
             this->addChild(counterTimer, 10);
 
             m_fields->m_autoplayRemaining = remainingSeconds;
-            this->schedule(schedule_selector(HideFolderListLevelInfo::autoplayTimerTick), 1.0f);
+            this->schedule(schedule_selector(AutoPlayLevelInfo::autoplayTimerTick), 1.0f);
         }
     }
 };

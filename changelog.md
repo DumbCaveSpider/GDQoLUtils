@@ -1,7 +1,9 @@
 ## v1.0.5
 
+- Updated **Suggestions Info** since some of y'all can't suggest things good or original
 - Added **Custom Progress Bar Colors** (suggested by [StackDasher](user:41028168))
 - Added **Auto Play Level** (suggested by [Deteremsi](user:30493651))
+- Added **Hide Folder or Level List Button** (suggested by [vinyl39](user:20626664))
 
 ## v1.0.4
 
