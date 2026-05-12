@@ -69,7 +69,7 @@ bool SuggestionPopup::init() {
     std::string placeholderText =
         "__Enter a description for your suggestion!__\n\n"
         "<cy>Provide as much detail as possible, the more detailed your suggestion is, the more likely it is to be implemented!</c>\n\n"
-        "<cr>#### Avoid suggesting mod menu related features or useless features.</c>\n";
+        "<cr>**Avoid suggesting mod menu related features or useless features.**</c>\n";
     m_suggestionText = MDTextArea::create(placeholderText, {140.f, 105.f});
     m_mainLayer->addChildAtPosition(m_suggestionText, Anchor::Right, {-85.f, 5.f}, false);
 
